@@ -1,55 +1,75 @@
-<div class="container-fluid">
-          <!-- Content Row -->
- <div class="row">
-     <div class="container p-2">
-        <div class="row">
-          
-            <div class="col-md-6">
-                <div class="card-body">
-                    <h1>
-                        Usuarios Registrados
-                    </h1>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                <th scope="col">id</th>
-                                <th scope="col">nombres</th>
-                                <th scope="col">apellidos</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Telefono</th>
-                                <th scope="col">Profesión</th>
-                                <th scope="col">Edad</th>
-                                <th scope="col">Salario</th>
-                                <th scope="col">Banco</th>
-                                <th scope="col">F. Contacto Inicial</th>
-                                <th scope="col">F. Ultimo Contacto</th>
-                                <th scope="col">F. Proximo Contacto</th>
-                                <th scope="col">Ciudad</th>
-                                <th scope="col">Departamento</th>
-                                <th scope="col">#</th>
-                                
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {{#each empleados}}
-                                <tr>
-                                <th scope="row">{{id}}</th>
-                                <td>{{nombre}}</td>
-                                <td>{{apellidos}}</td>
-                                <td>{{cedula}}</td>
-                                <td>{{celular}}</td>
-                                <td>
-                                    <a href="delete/{{id}}" class="far fa-trash-alt btn btn-danger"></a>
-                                    <a href="/empleados/update" class="btn btn-info">Modificar</a>
-                                </td>
-                                </tr>
-                                {{/each}}
-                            </tbody>
-                            
-                        </table>
+ <div id="content" class="bg-grey w-100">
+
+              <section class="bg-light py-3">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-9 col-md-8">
+            <div class="container-fluid">
+                    <!-- Content Row -->
+            <div class="row">
+                <div class="container p-2">
+                    <div class="row">
+                    
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h1>
+                                    Usuarios Registrados
+                                </h1>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">id</th>
+                                            <th scope="col">nombres</th>
+                                            <th scope="col">apellidos</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Telefono</th>
+                                            <th scope="col">Profesión</th>
+                                            <th scope="col">Edad</th>
+                                            <th scope="col">Salario</th>
+                                            <th scope="col">Banco</th>
+                                            <th scope="col">F. Contacto Inicial</th>
+                                            <th scope="col">F. Ultimo Contacto</th>
+                                            <th scope="col">F. Proximo Contacto</th>
+                                            <th scope="col">Ciudad</th>
+                                            <th scope="col">Departamento</th>
+                                            <th scope="col">#</th>
+                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {{#each usua}}
+                                            <tr>
+                                            <th scope="row">{{id_user}}</th>
+                                            <td>{{nombres}}</td>
+                                            <td>{{apellidos}}</td>
+                                            <td>{{email}}</td>
+                                            <td>{{telefonos}}</td>
+                                            <td>{{profesion}}</td>
+                                            <td>{{edad}}</td>
+                                            <td>{{salario}}</td>
+                                            <td>{{banco}}</td>
+                                            <td>{{fcontacto}}</td>
+                                            <td>{{fultimo}}</td>
+                                            <td>{{fproximo}}</td>
+                                            <td>{{ciudad}}</td>
+                                            <td>{{departamento}}</td>
+                                            <td>
+                                                <a href="delete/{{id}}" class="far fa-trash-alt btn btn-danger"></a>
+                                                <a href="/empleados/update" class="btn btn-info">Modificar</a>
+                                            </td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                        
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
- </div>
-</div>
+            </div>
+  </div>
+                    </div>
+                </div>
+            </div>
+           
